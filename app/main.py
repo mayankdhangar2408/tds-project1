@@ -12,7 +12,7 @@ from app.notify import notify_evaluation_server
 from app.github_utils import create_or_update_binary_file
 
 load_dotenv()
-USER_SECRET = os.getenv("USER_SECRET")
+USER_SECRET = os.getenv("OPENAI_API_KEY")
 USERNAME = os.getenv("GITHUB_USERNAME")
 PROCESSED_PATH = "/tmp/processed_requests.json"
 
